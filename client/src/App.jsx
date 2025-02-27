@@ -19,7 +19,8 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>} />
+      <Route path="/digital-marketing-app" element={<Home />} />
+        {/* <Route path='/' element={<Home/>} /> */}
         <Route path='/about' element={<About/>} />
       </Routes>
       <ContactSection/>
