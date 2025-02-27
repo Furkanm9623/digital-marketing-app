@@ -1,0 +1,31 @@
+import { useState } from 'react'
+import './App.css'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import OurServices from './components/OurServices'
+import ItSupport from './components/ItSupport'
+import Technologies from './components/Technologies'
+import TestimonialSlider from './components/TestimonialSlider'
+import TeamCarousel from './components/OurTeam'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import { Route, Routes } from 'react-router-dom'
+
+function App() {
+
+  return (
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+      </Routes>
+      <ContactSection/>
+      <Footer/>
+    </>
+  )
+}
+
+export default App
