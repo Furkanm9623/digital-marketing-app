@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import { Route, Routes } from 'react-router-dom'
+import ServiceDetails from './pages/ServiceDetails'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/digital-marketing-app" element={<Home />} />
         {/* <Route path='/' element={<Home/>} /> */}
         <Route path='/about' element={<About/>} />
+        <Route path="/service-details/:title" element={<ServiceDetails />} />
       </Routes>
       <ContactSection/>
       <Footer/>
