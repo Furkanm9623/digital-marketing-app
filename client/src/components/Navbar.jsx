@@ -73,11 +73,11 @@ const Navbar = () => {
 
       {/* Call to Action Button */}
       <div className="flex items-center space-x-4">
-        <div
-          className="bg-green-500 text-white p-2 rounded-full hover:bg-green-400 transition duration-300"
+      <div
+          className="bg-green-500 text-white p-2 rounded-full hover:bg-green-400 transition duration-300 md:p-2 p-1"
           onClick={openWhatsApp}
         >
-          <FaWhatsapp size={24} />
+          <FaWhatsapp size={24} className="md:size-6 size-4" />
         </div>
 
         <button className="bg-blue-400 text-black px-6 py-2 font-semibold rounded-lg hover:bg-blue-300 transition duration-300 hidden md:block">

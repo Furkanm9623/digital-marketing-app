@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -63,6 +63,9 @@ const ServiceDetails = () => {
     services[title] || services["website-development"]
   );
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [selectedService]);
   // Handle Sidebar Click
   const handleServiceClick = (serviceKey) => {
     setSelectedService(services[serviceKey]);
