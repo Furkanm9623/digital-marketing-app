@@ -1,4 +1,4 @@
-const API_URL = "https://digiflow-backend-2.onrender.com/api/v1/contact/contact-us"; // Update with your backend URL
+const API_URL = "https://digiflow-backend-2.onrender.com/api/v1/contact/contact-us";
 
 export const submitContactForm = async (formData) => {
   try {
